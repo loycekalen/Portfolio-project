@@ -118,4 +118,10 @@ div.work p {
     padding: 30px 20px;
     text-align: center;
   }
+  div.work h1 {
+    font-size: 44px;
+  }
+  .work {
+    padding: 30px 20px;
+  }
 }
