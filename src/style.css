@@ -1,6 +1,7 @@
 :root {
   --primary-color: #272142;
   --secondary-color: #6c63ff;
+  --background-color: #f9f7fe;
   --font-family: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
 }
@@ -30,9 +31,14 @@ h3 {
   font-weight: 700;
   font-size: 24px;
 }
+h4 {
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-weight: 700;
+}
 .hero {
   text-align: center;
-  background: #f9f7fe;
+  background: var(--background-color);
   padding: 160px 20px;
 }
 section {
@@ -56,7 +62,17 @@ section {
 .project-desc {
   padding: 130px 40px 0;
 }
-
+.learn-button {
+  border: 1px solid var(--secondary-color);
+  padding: 15px 35px;
+  color: var(--secondary-color);
+  font-family: var(--default-font);
+  font-size: 18px;
+  font-weight: 500;
+}
+.learn-button:hover {
+  border: 1px solid var(--secondary-color);
+}
 p {
   font-family: var(--default-font);
   font-weight: 400;
@@ -79,7 +95,7 @@ main section {
   font-family: var(--default-font);
   border: 1px solid var(--secondary-color);
   color: #fff;
-  padding: 15px 35px;
+  padding: 20px 35px;
   background-color: var(--secondary-color);
 }
 .button:hover {
@@ -102,6 +118,41 @@ a {
   font-family: var(--default-font);
 }
 
+footer {
+  background: var(--background-color);
+  padding: 40px 20px;
+  border-radius: 4px;
+}
+.footer {
+  padding: 130px 0 0;
+}
+.footer p {
+  font-family: var(--default-font);
+  font-size: 18px;
+  font-weight: 400;
+}
+.email-link a {
+  font-family: var(--default-font);
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+}
+.email-link a:hover {
+  color: #6c63ff;
+  text-decoration: underline;
+}
+.socials i {
+  background: var(--background-color);
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 15px;
+  color: var(--secondary-color);
+  transition: 100ms ease-in-out;
+}
+.socials i:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
 @media (max-width: 992px) {
   h1 {
     font-size: 44px;
@@ -126,5 +177,8 @@ a {
   }
   .work {
     padding: 30px 20px;
+  }
+  .footer {
+    display: none;
   }
 }
