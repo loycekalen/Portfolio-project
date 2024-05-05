@@ -69,7 +69,7 @@ main h1 {
   line-height: 70px;
 }
 main {
-  padding: 130px 20px;
+  padding: 130px 40px;
 }
 main section {
   font-weight: 700;
@@ -87,7 +87,7 @@ main section {
   background: var(--secondary-color);
 }
 .work {
-  padding: 135px 20px 0;
+  padding: 130px 40px 0;
 }
 div.work h1 {
   font-size: 65px;
@@ -97,6 +97,9 @@ div.work p {
   font-size: 14px;
   color: #6c757d;
   font-weight: 500;
+}
+a {
+  font-family: var(--default-font);
 }
 
 @media (max-width: 992px) {
